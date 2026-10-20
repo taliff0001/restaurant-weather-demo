@@ -1,0 +1,63 @@
+date,name,category,effect,source,notes
+2025-09-06,VT vs Vanderbilt (7:30 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-09-11,Berglund Coliseum: Alabama w/ Exile,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2025-09-13,VT vs Old Dominion (7:00 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-09-20,VT vs Wofford (12:00 pm),vt_football,vt_home_day,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-09-27,VT at NC State (7:00 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,away
+2025-10-04,VT vs Wake Forest (1:00 pm),vt_football,vt_home_day,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-10-11,VT at Georgia Tech (3:30 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,away
+2025-10-17,GO Outside Festival,festival,festival_big,https://roanokegofest.com/go-outside-2025-recap/,Elmwood Park + Explore Park; ~40k attendees (organizer)
+2025-10-18,GO Outside Festival,festival,festival_big,https://roanokegofest.com/go-outside-2025-recap/,Elmwood Park + Explore Park; ~40k attendees (organizer)
+2025-10-19,GO Outside Festival,festival,festival_big,https://roanokegofest.com/go-outside-2025-recap/,Elmwood Park + Explore Park; ~40k attendees (organizer)
+2025-10-24,VT vs California (7:30 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-10-26,Downtown Candy Crawl,festival_small,none,https://www.DowntownRoanoke.org/events/signature-events,"listed, no effect modeled"
+2025-11-01,VT vs Louisville (3:00 pm),vt_football,vt_home_day,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-11-06,Berglund Coliseum: Disney On Ice,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2025-11-07,Berglund Coliseum: Disney On Ice,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2025-11-08,Berglund Coliseum: Disney On Ice,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2025-11-09,Berglund Coliseum: Disney On Ice,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2025-11-15,VT at Florida State (7:30 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,away
+2025-11-22,VT vs Miami (12:00 pm),vt_football,vt_home_day,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,home
+2025-11-27,Thanksgiving,holiday,closed,,assumed closed (no published multiplier)
+2025-11-29,VT at Virginia (7:00 pm),vt_football,vt_watch,https://en.wikipedia.org/wiki/2025_Virginia_Tech_Hokies_football_team,away
+2025-12-05,Dickens of a Christmas (tree lighting),festival,dickens,https://nrv.mobile.macaronikid.com/articles/69310e50e5c2f52a7c233f9e/dickens-of-a-christmas-2025-a-complete-guide-for-families,
+2025-12-12,Dickens of a Christmas (parade),festival,dickens,https://nrv.mobile.macaronikid.com/articles/69310e50e5c2f52a7c233f9e/dickens-of-a-christmas-2025-a-complete-guide-for-families,
+2025-12-19,Dickens of a Christmas (pet costume contest),festival,dickens,https://nrv.mobile.macaronikid.com/articles/69310e50e5c2f52a7c233f9e/dickens-of-a-christmas-2025-a-complete-guide-for-families,
+2025-12-24,Christmas Eve,holiday,xmas_eve,https://pos.toasttab.com/blog/on-the-line/2019-christmas-and-christmas-eve-restaurant-trends,
+2025-12-25,Christmas Day,holiday,closed,https://pos.toasttab.com/blog/on-the-line/2019-christmas-and-christmas-eve-restaurant-trends,81% of Toast restaurants closed
+2025-12-31,New Year's Eve,holiday,nye,https://pos.toasttab.com/blog/on-the-line/new-years-2020-restaurant-trends,
+2026-01-01,New Year's Day,holiday,nyd,https://pos.toasttab.com/blog/on-the-line/new-years-2020-restaurant-trends,
+2026-01-16,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-17,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-18,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-19,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-20,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-21,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-22,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-23,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-24,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-25,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-02-08,Super Bowl LX,holiday,super_bowl,https://pos.toasttab.com/blog/on-the-line/super-bowl-food-stats,
+2026-02-14,Valentine's Day (Sat),holiday,valentines,https://pos.toasttab.com/blog/on-the-line/valentines-day-food-insights,multiplier inferred for a Saturday
+2026-03-06,Roanoke Arts Pop!,festival_small,none,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,"listed, no effect modeled"
+2026-03-14,St. Patrick's Day Parade & Shamrock Festival,festival,st_pats_parade,https://www.downtownroanoke.org/news-item/freedom-first-st-patrick-s-day-parade-and-shamrock-festival-2026,
+2026-04-16,Down by Downtown Music Festival,festival,festival_big,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,
+2026-04-17,Down by Downtown Music Festival,festival,festival_big,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,
+2026-04-18,Blue Ridge Marathon,festival_small,none,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,"listed, no effect modeled"
+2026-04-18,Down by Downtown Music Festival,festival,festival_big,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,
+2026-04-19,Down by Downtown Music Festival,festival,festival_big,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,
+2026-04-26,Roanoke Pride Festival,festival_small,none,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,"listed, no effect modeled"
+2026-05-01,Strawberry Festival,festival_small,none,https://theroanoker.com/events-calendar-may-june-2026/,"listed, no effect modeled"
+2026-05-02,Strawberry Festival,festival_small,none,https://theroanoker.com/events-calendar-may-june-2026/,"listed, no effect modeled"
+2026-05-10,Mother's Day,holiday,mothers_day,https://pos.toasttab.com/blog/data/mothers-day-restaurant-trends-data,
+2026-05-16,Local Colors Festival,festival,festival_big,https://theroanoker.com/events-calendar-may-june-2026/,
+2026-05-22,Festival in the Park,festival,festival_big,https://theroanoker.com/events-calendar-may-june-2026/,
+2026-05-23,Festival in the Park,festival,festival_big,https://theroanoker.com/events-calendar-may-june-2026/,
+2026-05-24,Festival in the Park,festival,festival_big,https://theroanoker.com/events-calendar-may-june-2026/,
+2026-05-30,Sidewalk Art Show,festival_small,none,https://theroanoker.com/events-calendar-may-june-2026/,"listed, no effect modeled"
+2026-05-31,Sidewalk Art Show,festival_small,none,https://theroanoker.com/events-calendar-may-june-2026/,"listed, no effect modeled"
+2026-06-04,Berglund Coliseum: Journey,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2026-07-04,Independence Day,holiday,july4,https://pos.toasttab.com/blog/data/fourth-of-july-restaurant-insights,
+2026-07-14,Berglund Coliseum: Billy Strings,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2026-08-08,Berglund Coliseum: Leanne Morgan,berglund,berglund_coliseum,https://www.concertarchives.org/venues/berglund-center,
+2026-08-29,Roanoke Taco Fest,festival_small,none,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,"listed, no effect modeled"
