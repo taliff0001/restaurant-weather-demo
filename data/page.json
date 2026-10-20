@@ -1,0 +1,1674 @@
+{
+ "window": {
+  "start": "2025-09-01",
+  "end": "2026-08-31",
+  "days": 365,
+  "open_days": 361,
+  "closed_days": 4
+ },
+ "annual_total": 1296407.0,
+ "rain": {
+  "fri_sat_all": {
+   "rainy": {
+    "label": "rainy Fri/Sat",
+    "n": 7,
+    "median_ratio": 0.897,
+    "median_delta": -589.0
+   },
+   "dry": {
+    "label": "dry Fri/Sat",
+    "n": 63,
+    "median_ratio": 1.0,
+    "median_delta": 0.0
+   }
+  },
+  "fri_sat_warm": {
+   "rainy": {
+    "label": "rainy warm Fri/Sat",
+    "n": 6,
+    "median_ratio": 0.889,
+    "median_delta": -592.0
+   },
+   "dry": {
+    "label": "dry warm Fri/Sat",
+    "n": 39,
+    "median_ratio": 1.0,
+    "median_delta": 0.0
+   }
+  },
+  "fri_sat_cold": {
+   "rainy": {
+    "label": "rainy cold Fri/Sat",
+    "n": 1,
+    "median_ratio": 0.897,
+    "median_delta": -589.0
+   },
+   "dry": {
+    "label": "dry cold Fri/Sat",
+    "n": 24,
+    "median_ratio": 1.0,
+    "median_delta": -2.0
+   }
+  },
+  "all_days": {
+   "rainy": {
+    "label": "rainy days",
+    "n": 36,
+    "median_ratio": 0.934,
+    "median_delta": -182.0
+   },
+   "n_rainy_days_year": 39
+  },
+  "takeout_on_rain": {
+   "rainy_median": 616.0,
+   "dry_median": 532.0
+  },
+  "channels_warm_fri_sat": {
+   "dine_in": {
+    "rainy": 3686.0,
+    "dry": 4259.0
+   },
+   "patio": {
+    "rainy": 0.0,
+    "dry": 282.0
+   },
+   "takeout": {
+    "rainy": 957.0,
+    "dry": 935.0
+   }
+  }
+ },
+ "events": [
+  {
+   "key": "festival_big",
+   "label": "Big downtown festival",
+   "n": 10,
+   "median_ratio": 1.213,
+   "median_delta": 849.0,
+   "lo": 0.981,
+   "hi": 1.616
+  },
+  {
+   "key": "st_pats_parade",
+   "label": "St. Patrick's Day parade",
+   "n": 1,
+   "median_ratio": 1.271,
+   "median_delta": 1510.0,
+   "lo": 1.271,
+   "hi": 1.271
+  },
+  {
+   "key": "dickens",
+   "label": "Dickens of a Christmas",
+   "n": 2,
+   "median_ratio": 1.053,
+   "median_delta": 248.0,
+   "lo": 0.945,
+   "hi": 1.161
+  },
+  {
+   "key": "restaurant_week",
+   "label": "Restaurant Week",
+   "n": 8,
+   "median_ratio": 0.968,
+   "median_delta": -84.0,
+   "lo": 0.8,
+   "hi": 1.21
+  },
+  {
+   "key": "berglund_coliseum",
+   "label": "Berglund coliseum show",
+   "n": 8,
+   "median_ratio": 1.073,
+   "median_delta": 220.0,
+   "lo": 0.974,
+   "hi": 1.35
+  },
+  {
+   "key": "vt_watch",
+   "label": "Tech game on TV (away or night)",
+   "n": 6,
+   "median_ratio": 1.027,
+   "median_delta": 125.0,
+   "lo": 0.922,
+   "hi": 1.147
+  },
+  {
+   "key": "vt_home_day",
+   "label": "Tech home game, daytime",
+   "n": 4,
+   "median_ratio": 1.006,
+   "median_delta": 34.0,
+   "lo": 0.812,
+   "hi": 1.175
+  },
+  {
+   "key": "mothers_day",
+   "label": "Mother's Day",
+   "n": 1,
+   "median_ratio": 1.334,
+   "median_delta": 1543.0,
+   "lo": 1.334,
+   "hi": 1.334
+  },
+  {
+   "key": "valentines",
+   "label": "Valentine's Day",
+   "n": 1,
+   "median_ratio": 1.225,
+   "median_delta": 1231.0,
+   "lo": 1.225,
+   "hi": 1.225
+  },
+  {
+   "key": "nye",
+   "label": "New Year's Eve",
+   "n": 1,
+   "median_ratio": 1.535,
+   "median_delta": 1440.0,
+   "lo": 1.535,
+   "hi": 1.535
+  },
+  {
+   "key": "super_bowl",
+   "label": "Super Bowl Sunday",
+   "n": 1,
+   "median_ratio": 0.895,
+   "median_delta": -405.0,
+   "lo": 0.895,
+   "hi": 0.895
+  },
+  {
+   "key": "xmas_eve",
+   "label": "Christmas Eve",
+   "n": 1,
+   "median_ratio": 0.9,
+   "median_delta": -269.0,
+   "lo": 0.9,
+   "hi": 0.9
+  },
+  {
+   "key": "nyd",
+   "label": "New Year's Day",
+   "n": 1,
+   "median_ratio": 0.977,
+   "median_delta": -65.0,
+   "lo": 0.977,
+   "hi": 0.977
+  }
+ ],
+ "storm": {
+  "start": "2026-01-24",
+  "end": "2026-01-31",
+  "actual": 12415.0,
+  "typical_week": 29758.0,
+  "lost": 17343.0,
+  "days": [
+   {
+    "date": "2026-01-24",
+    "weekday": "Sat",
+    "total": 2460.0,
+    "closed": false,
+    "note": "storm starts"
+   },
+   {
+    "date": "2026-01-25",
+    "weekday": "Sun",
+    "total": 0.0,
+    "closed": true,
+    "note": "closed (streets impassable)"
+   },
+   {
+    "date": "2026-01-26",
+    "weekday": "Mon",
+    "total": 0.0,
+    "closed": true,
+    "note": "closed (streets impassable)"
+   },
+   {
+    "date": "2026-01-27",
+    "weekday": "Tue",
+    "total": 426.0,
+    "closed": false,
+    "note": "downtown nearly empty (~15 diners vs ~100 at one brunch spot)"
+   },
+   {
+    "date": "2026-01-28",
+    "weekday": "Wed",
+    "total": 1049.0,
+    "closed": false,
+    "note": "roads still iced"
+   },
+   {
+    "date": "2026-01-29",
+    "weekday": "Thu",
+    "total": 1834.0,
+    "closed": false,
+    "note": "roads still iced"
+   },
+   {
+    "date": "2026-01-30",
+    "weekday": "Fri",
+    "total": 2842.0,
+    "closed": false,
+    "note": "recovering"
+   },
+   {
+    "date": "2026-01-31",
+    "weekday": "Sat",
+    "total": 3803.0,
+    "closed": false,
+    "note": "another round of snow"
+   }
+  ]
+ },
+ "snow_other": {
+  "label": "snow/ice days outside the storm",
+  "n": 5,
+  "median_ratio": 0.749,
+  "median_delta": -690.0
+ },
+ "temperature": [
+  {
+   "lo": -99,
+   "hi": 35,
+   "n": 16,
+   "median_ratio": 1.002,
+   "patio_share": 0.0
+  },
+  {
+   "lo": 35,
+   "hi": 45,
+   "n": 25,
+   "median_ratio": 1.0,
+   "patio_share": 0.0
+  },
+  {
+   "lo": 45,
+   "hi": 55,
+   "n": 28,
+   "median_ratio": 0.988,
+   "patio_share": 0.0
+  },
+  {
+   "lo": 55,
+   "hi": 65,
+   "n": 49,
+   "median_ratio": 0.999,
+   "patio_share": 0.0
+  },
+  {
+   "lo": 65,
+   "hi": 75,
+   "n": 57,
+   "median_ratio": 1.0,
+   "patio_share": 0.049
+  },
+  {
+   "lo": 75,
+   "hi": 85,
+   "n": 75,
+   "median_ratio": 1.0,
+   "patio_share": 0.044
+  },
+  {
+   "lo": 85,
+   "hi": 199,
+   "n": 16,
+   "median_ratio": 0.994,
+   "patio_share": 0.0
+  }
+ ],
+ "patio": {
+  "share_of_year": 0.021,
+  "days_with_patio": 123
+ },
+ "fri_sat_series": [
+  {
+   "date": "2025-09-05",
+   "weekday": "Fri",
+   "total": 4611.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-09-06",
+   "weekday": "Sat",
+   "total": 6561.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Vanderbilt (7:30 pm)"
+  },
+  {
+   "date": "2025-09-12",
+   "weekday": "Fri",
+   "total": 5065.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-09-13",
+   "weekday": "Sat",
+   "total": 5728.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Old Dominion (7:00 pm)"
+  },
+  {
+   "date": "2025-09-19",
+   "weekday": "Fri",
+   "total": 4629.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-09-20",
+   "weekday": "Sat",
+   "total": 6721.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Wofford (12:00 pm)"
+  },
+  {
+   "date": "2025-09-26",
+   "weekday": "Fri",
+   "total": 5402.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-09-27",
+   "weekday": "Sat",
+   "total": 5669.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT at NC State (7:00 pm)"
+  },
+  {
+   "date": "2025-10-03",
+   "weekday": "Fri",
+   "total": 5515.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-10-04",
+   "weekday": "Sat",
+   "total": 4667.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Wake Forest (1:00 pm)"
+  },
+  {
+   "date": "2025-10-10",
+   "weekday": "Fri",
+   "total": 4658.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-10-11",
+   "weekday": "Sat",
+   "total": 6375.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT at Georgia Tech (3:30 pm)"
+  },
+  {
+   "date": "2025-10-17",
+   "weekday": "Fri",
+   "total": 4935.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "GO Outside Festival"
+  },
+  {
+   "date": "2025-10-18",
+   "weekday": "Sat",
+   "total": 7663.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "GO Outside Festival"
+  },
+  {
+   "date": "2025-10-24",
+   "weekday": "Fri",
+   "total": 4899.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs California (7:30 pm)"
+  },
+  {
+   "date": "2025-10-25",
+   "weekday": "Sat",
+   "total": 5749.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-10-31",
+   "weekday": "Fri",
+   "total": 4368.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-11-01",
+   "weekday": "Sat",
+   "total": 5984.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Louisville (3:00 pm)"
+  },
+  {
+   "date": "2025-11-07",
+   "weekday": "Fri",
+   "total": 4845.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Berglund Coliseum: Disney On Ice"
+  },
+  {
+   "date": "2025-11-08",
+   "weekday": "Sat",
+   "total": 5833.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Berglund Coliseum: Disney On Ice"
+  },
+  {
+   "date": "2025-11-14",
+   "weekday": "Fri",
+   "total": 4746.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-11-15",
+   "weekday": "Sat",
+   "total": 5359.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT at Florida State (7:30 pm)"
+  },
+  {
+   "date": "2025-11-21",
+   "weekday": "Fri",
+   "total": 4633.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-11-22",
+   "weekday": "Sat",
+   "total": 5711.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT vs Miami (12:00 pm)"
+  },
+  {
+   "date": "2025-11-28",
+   "weekday": "Fri",
+   "total": 4784.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-11-29",
+   "weekday": "Sat",
+   "total": 5385.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "VT at Virginia (7:00 pm)"
+  },
+  {
+   "date": "2025-12-05",
+   "weekday": "Fri",
+   "total": 5428.0,
+   "rain": false,
+   "snow": 1,
+   "closed": false,
+   "storm": false,
+   "events": "Dickens of a Christmas (tree lighting)"
+  },
+  {
+   "date": "2025-12-06",
+   "weekday": "Sat",
+   "total": 6346.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-12-12",
+   "weekday": "Fri",
+   "total": 4424.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Dickens of a Christmas (parade)"
+  },
+  {
+   "date": "2025-12-13",
+   "weekday": "Sat",
+   "total": 5232.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-12-19",
+   "weekday": "Fri",
+   "total": 5433.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Dickens of a Christmas (pet costume contest)"
+  },
+  {
+   "date": "2025-12-20",
+   "weekday": "Sat",
+   "total": 6374.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-12-26",
+   "weekday": "Fri",
+   "total": 4728.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2025-12-27",
+   "weekday": "Sat",
+   "total": 5814.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-01-02",
+   "weekday": "Fri",
+   "total": 4149.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-01-03",
+   "weekday": "Sat",
+   "total": 5893.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-01-09",
+   "weekday": "Fri",
+   "total": 3847.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-01-10",
+   "weekday": "Sat",
+   "total": 5151.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-01-16",
+   "weekday": "Fri",
+   "total": 4332.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Downtown Restaurant Week (dates estimated)"
+  },
+  {
+   "date": "2026-01-17",
+   "weekday": "Sat",
+   "total": 4594.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Downtown Restaurant Week (dates estimated)"
+  },
+  {
+   "date": "2026-01-23",
+   "weekday": "Fri",
+   "total": 4398.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Downtown Restaurant Week (dates estimated)"
+  },
+  {
+   "date": "2026-01-24",
+   "weekday": "Sat",
+   "total": 2460.0,
+   "rain": false,
+   "snow": 1,
+   "closed": false,
+   "storm": true,
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-30",
+   "weekday": "Fri",
+   "total": 2842.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": true,
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-31",
+   "weekday": "Sat",
+   "total": 3803.0,
+   "rain": false,
+   "snow": 1,
+   "closed": false,
+   "storm": true,
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-02-06",
+   "weekday": "Fri",
+   "total": 3611.0,
+   "rain": false,
+   "snow": 1,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-07",
+   "weekday": "Sat",
+   "total": 4659.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-13",
+   "weekday": "Fri",
+   "total": 5027.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-14",
+   "weekday": "Sat",
+   "total": 6707.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Valentine's Day (Sat)"
+  },
+  {
+   "date": "2026-02-20",
+   "weekday": "Fri",
+   "total": 5696.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-21",
+   "weekday": "Sat",
+   "total": 5476.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-27",
+   "weekday": "Fri",
+   "total": 4664.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-02-28",
+   "weekday": "Sat",
+   "total": 5666.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-06",
+   "weekday": "Fri",
+   "total": 5693.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Roanoke Arts Pop!"
+  },
+  {
+   "date": "2026-03-07",
+   "weekday": "Sat",
+   "total": 6308.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-13",
+   "weekday": "Fri",
+   "total": 4763.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-14",
+   "weekday": "Sat",
+   "total": 7086.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "St. Patrick's Day Parade & Shamrock Festival"
+  },
+  {
+   "date": "2026-03-20",
+   "weekday": "Fri",
+   "total": 4747.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-21",
+   "weekday": "Sat",
+   "total": 5576.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-27",
+   "weekday": "Fri",
+   "total": 4439.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-03-28",
+   "weekday": "Sat",
+   "total": 4976.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-03",
+   "weekday": "Fri",
+   "total": 4362.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-04",
+   "weekday": "Sat",
+   "total": 5648.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-10",
+   "weekday": "Fri",
+   "total": 5537.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-11",
+   "weekday": "Sat",
+   "total": 6150.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-17",
+   "weekday": "Fri",
+   "total": 5423.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Down by Downtown Music Festival"
+  },
+  {
+   "date": "2026-04-18",
+   "weekday": "Sat",
+   "total": 9114.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Blue Ridge Marathon; Down by Downtown Music Festival"
+  },
+  {
+   "date": "2026-04-24",
+   "weekday": "Fri",
+   "total": 4125.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-04-25",
+   "weekday": "Sat",
+   "total": 5600.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-05-01",
+   "weekday": "Fri",
+   "total": 4822.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Strawberry Festival"
+  },
+  {
+   "date": "2026-05-02",
+   "weekday": "Sat",
+   "total": 5520.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Strawberry Festival"
+  },
+  {
+   "date": "2026-05-08",
+   "weekday": "Fri",
+   "total": 4831.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-05-09",
+   "weekday": "Sat",
+   "total": 6362.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-05-15",
+   "weekday": "Fri",
+   "total": 5486.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-05-16",
+   "weekday": "Sat",
+   "total": 7012.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Local Colors Festival"
+  },
+  {
+   "date": "2026-05-22",
+   "weekday": "Fri",
+   "total": 5462.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Festival in the Park"
+  },
+  {
+   "date": "2026-05-23",
+   "weekday": "Sat",
+   "total": 6181.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Festival in the Park"
+  },
+  {
+   "date": "2026-05-29",
+   "weekday": "Fri",
+   "total": 4264.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-05-30",
+   "weekday": "Sat",
+   "total": 5634.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Sidewalk Art Show"
+  },
+  {
+   "date": "2026-06-05",
+   "weekday": "Fri",
+   "total": 5776.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-06",
+   "weekday": "Sat",
+   "total": 5353.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-12",
+   "weekday": "Fri",
+   "total": 4793.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-13",
+   "weekday": "Sat",
+   "total": 6689.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-19",
+   "weekday": "Fri",
+   "total": 5223.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-20",
+   "weekday": "Sat",
+   "total": 5771.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-26",
+   "weekday": "Fri",
+   "total": 5194.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-06-27",
+   "weekday": "Sat",
+   "total": 4493.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-03",
+   "weekday": "Fri",
+   "total": 4302.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-04",
+   "weekday": "Sat",
+   "total": 3929.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Independence Day"
+  },
+  {
+   "date": "2026-07-10",
+   "weekday": "Fri",
+   "total": 4878.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-11",
+   "weekday": "Sat",
+   "total": 5677.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-17",
+   "weekday": "Fri",
+   "total": 4857.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-18",
+   "weekday": "Sat",
+   "total": 5608.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-24",
+   "weekday": "Fri",
+   "total": 4419.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-25",
+   "weekday": "Sat",
+   "total": 6479.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-07-31",
+   "weekday": "Fri",
+   "total": 4993.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-01",
+   "weekday": "Sat",
+   "total": 4966.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-07",
+   "weekday": "Fri",
+   "total": 4395.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-08",
+   "weekday": "Sat",
+   "total": 6926.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Berglund Coliseum: Leanne Morgan"
+  },
+  {
+   "date": "2026-08-14",
+   "weekday": "Fri",
+   "total": 4926.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-15",
+   "weekday": "Sat",
+   "total": 5689.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-21",
+   "weekday": "Fri",
+   "total": 4062.0,
+   "rain": true,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-22",
+   "weekday": "Sat",
+   "total": 6469.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-28",
+   "weekday": "Fri",
+   "total": 4688.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": ""
+  },
+  {
+   "date": "2026-08-29",
+   "weekday": "Sat",
+   "total": 4974.0,
+   "rain": false,
+   "snow": 0,
+   "closed": false,
+   "storm": false,
+   "events": "Roanoke Taco Fest"
+  }
+ ],
+ "best_days": [
+  {
+   "date": "2026-04-18",
+   "weekday": "Sat",
+   "total": 9114.0,
+   "typical": 5641.0,
+   "ratio": 1.62,
+   "high_f": 89,
+   "weather": "dry",
+   "events": "Blue Ridge Marathon; Down by Downtown Music Festival"
+  },
+  {
+   "date": "2025-12-31",
+   "weekday": "Wed",
+   "total": 4131.0,
+   "typical": 2692.0,
+   "ratio": 1.53,
+   "high_f": 42,
+   "weather": "dry",
+   "events": "New Year's Eve"
+  },
+  {
+   "date": "2026-05-24",
+   "weekday": "Sun",
+   "total": 6301.0,
+   "typical": 4618.0,
+   "ratio": 1.36,
+   "high_f": 67,
+   "weather": "dry",
+   "events": "Festival in the Park"
+  },
+  {
+   "date": "2025-11-09",
+   "weekday": "Sun",
+   "total": 5094.0,
+   "typical": 3774.0,
+   "ratio": 1.35,
+   "high_f": 72,
+   "weather": "dry",
+   "events": "Berglund Coliseum: Disney On Ice"
+  },
+  {
+   "date": "2026-05-10",
+   "weekday": "Sun",
+   "total": 6162.0,
+   "typical": 4618.0,
+   "ratio": 1.33,
+   "high_f": 82,
+   "weather": "dry",
+   "events": "Mother's Day"
+  },
+  {
+   "date": "2025-10-18",
+   "weekday": "Sat",
+   "total": 7663.0,
+   "typical": 5749.0,
+   "ratio": 1.33,
+   "high_f": 82,
+   "weather": "dry",
+   "events": "GO Outside Festival"
+  },
+  {
+   "date": "2026-08-30",
+   "weekday": "Sun",
+   "total": 5159.0,
+   "typical": 3987.0,
+   "ratio": 1.29,
+   "high_f": 87,
+   "weather": "dry",
+   "events": ""
+  },
+  {
+   "date": "2026-03-14",
+   "weekday": "Sat",
+   "total": 7086.0,
+   "typical": 5576.0,
+   "ratio": 1.27,
+   "high_f": 66,
+   "weather": "dry",
+   "events": "St. Patrick's Day Parade & Shamrock Festival"
+  },
+  {
+   "date": "2026-04-10",
+   "weekday": "Fri",
+   "total": 5537.0,
+   "typical": 4362.0,
+   "ratio": 1.27,
+   "high_f": 81,
+   "weather": "dry",
+   "events": ""
+  },
+  {
+   "date": "2026-05-16",
+   "weekday": "Sat",
+   "total": 7012.0,
+   "typical": 5634.0,
+   "ratio": 1.24,
+   "high_f": 81,
+   "weather": "dry",
+   "events": "Local Colors Festival"
+  }
+ ],
+ "worst_days": [
+  {
+   "date": "2026-01-27",
+   "weekday": "Tue",
+   "total": 426.0,
+   "typical": 2167.0,
+   "ratio": 0.2,
+   "high_f": 29,
+   "weather": "frozen roads",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-28",
+   "weekday": "Wed",
+   "total": 1049.0,
+   "typical": 2602.0,
+   "ratio": 0.4,
+   "high_f": 32,
+   "weather": "frozen roads",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-24",
+   "weekday": "Sat",
+   "total": 2460.0,
+   "typical": 5740.0,
+   "ratio": 0.43,
+   "high_f": 25,
+   "weather": "snow/ice",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-30",
+   "weekday": "Fri",
+   "total": 2842.0,
+   "typical": 4696.0,
+   "ratio": 0.61,
+   "high_f": 26,
+   "weather": "frozen roads",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2025-12-08",
+   "weekday": "Mon",
+   "total": 1280.0,
+   "typical": 2095.0,
+   "ratio": 0.61,
+   "high_f": 38,
+   "weather": "snow/ice",
+   "events": ""
+  },
+  {
+   "date": "2026-01-29",
+   "weekday": "Thu",
+   "total": 1834.0,
+   "typical": 2844.0,
+   "ratio": 0.64,
+   "high_f": 30,
+   "weather": "frozen roads",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2026-01-31",
+   "weekday": "Sat",
+   "total": 3803.0,
+   "typical": 5740.0,
+   "ratio": 0.66,
+   "high_f": 22,
+   "weather": "snow/ice",
+   "events": "January winter storm"
+  },
+  {
+   "date": "2025-12-09",
+   "weekday": "Tue",
+   "total": 1840.0,
+   "typical": 2744.0,
+   "ratio": 0.67,
+   "high_f": 29,
+   "weather": "frozen roads",
+   "events": ""
+  },
+  {
+   "date": "2026-07-04",
+   "weekday": "Sat",
+   "total": 3929.0,
+   "typical": 5677.0,
+   "ratio": 0.69,
+   "high_f": 97,
+   "weather": "rain",
+   "events": "Independence Day"
+  },
+  {
+   "date": "2026-08-06",
+   "weekday": "Thu",
+   "total": 2476.0,
+   "typical": 3504.0,
+   "ratio": 0.71,
+   "high_f": 89,
+   "weather": "dry",
+   "events": ""
+  }
+ ],
+ "biggest_dollar_days": [
+  {
+   "date": "2026-04-18",
+   "weekday": "Sat",
+   "total": 9114.0,
+   "typical": 5641.0,
+   "ratio": 1.62,
+   "high_f": 89,
+   "weather": "dry",
+   "events": "Blue Ridge Marathon; Down by Downtown Music Festival"
+  },
+  {
+   "date": "2025-10-18",
+   "weekday": "Sat",
+   "total": 7663.0,
+   "typical": 5749.0,
+   "ratio": 1.33,
+   "high_f": 82,
+   "weather": "dry",
+   "events": "GO Outside Festival"
+  },
+  {
+   "date": "2026-03-14",
+   "weekday": "Sat",
+   "total": 7086.0,
+   "typical": 5576.0,
+   "ratio": 1.27,
+   "high_f": 66,
+   "weather": "dry",
+   "events": "St. Patrick's Day Parade & Shamrock Festival"
+  },
+  {
+   "date": "2026-05-16",
+   "weekday": "Sat",
+   "total": 7012.0,
+   "typical": 5634.0,
+   "ratio": 1.24,
+   "high_f": 81,
+   "weather": "dry",
+   "events": "Local Colors Festival"
+  },
+  {
+   "date": "2026-08-08",
+   "weekday": "Sat",
+   "total": 6926.0,
+   "typical": 5689.0,
+   "ratio": 1.22,
+   "high_f": 89,
+   "weather": "dry",
+   "events": "Berglund Coliseum: Leanne Morgan"
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2025-09",
+   "total": 109026.0
+  },
+  {
+   "month": "2025-10",
+   "total": 111971.0
+  },
+  {
+   "month": "2025-11",
+   "total": 104585.0
+  },
+  {
+   "month": "2025-12",
+   "total": 105339.0
+  },
+  {
+   "month": "2026-01",
+   "total": 87372.0
+  },
+  {
+   "month": "2026-02",
+   "total": 95182.0
+  },
+  {
+   "month": "2026-03",
+   "total": 111544.0
+  },
+  {
+   "month": "2026-04",
+   "total": 111685.0
+  },
+  {
+   "month": "2026-05",
+   "total": 123134.0
+  },
+  {
+   "month": "2026-06",
+   "total": 111138.0
+  },
+  {
+   "month": "2026-07",
+   "total": 112587.0
+  },
+  {
+   "month": "2026-08",
+   "total": 112844.0
+  }
+ ]
+}
