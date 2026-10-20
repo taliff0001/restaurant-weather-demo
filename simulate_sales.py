@@ -46,14 +46,14 @@ P = {
         "super_bowl":  {"dine_in": 0.80, "takeout": 1.00},
         "july4":       {"all": 0.80},
         # downtown events                                        [G] low end of reasoned ranges
-        "festival_big":      {"all": 1.15},
-        "st_pats_parade":    {"all": 1.20},
-        "dickens":           {"all": 1.10},
+        "festival_big":      {"all": 1.15, "crowd": True},
+        "st_pats_parade":    {"all": 1.20, "crowd": True},
+        "dickens":           {"all": 1.10, "crowd": True},
         "restaurant_week":   {"all": 1.15 * 0.90},               # traffic +15%, check -10%
-        "berglund_coliseum": {"all": 1.08},
+        "berglund_coliseum": {"all": 1.08, "crowd": True},
         # Virginia Tech football                                 [G] bar with TVs
-        "vt_watch":    {"all": 1.08},                            # away games, home night games
-        "vt_home_day": {"all": 0.95},                            # fans leave town for the game
+        "vt_watch":    {"all": 1.08, "crowd": True},             # away games, home night games
+        "vt_home_day": {"all": 0.95, "crowd": True},             # fans leave town for the game
         # January 24-25, 2026 winter storm: hand-set recovery curve (closed Jan 25-26 via "closed").
         # Replaces the generic weather rules on these days.          [S] one WSLS report (Jan 27); rest [G]
         "storm_day1": {"all": 0.60, "override_weather": True},
@@ -63,6 +63,8 @@ P = {
         "storm_day7": {"all": 0.75, "override_weather": True},
         "storm_day8": {"all": 0.75, "override_weather": True},
     },
+    # Two crowd events on one day: the second counts at this fraction, the third at its square.  [G]
+    "stacking_decay": 0.5,
     # Day-to-day noise, log-normal so it can't go below zero.    [G]
     "noise_cv": 0.10,
 }
@@ -97,9 +99,17 @@ def expected_day(d, w, todays, p, weekly_base):
         elif w.frozen_roads:
             for k in exp: exp[k] *= p["frozen_roads"]
 
+    # Crowd events (festivals, shows, games) on the same day have diminishing returns:
+    # the largest counts in full, the second at half, the third at a quarter.
+    crowd = sorted([p["effects"][e] for e in todays.effect
+                    if e in p["effects"] and p["effects"][e].get("crowd")],
+                   key=lambda e: -abs(e["all"] - 1))
+    for i, e in enumerate(crowd):
+        m = 1 + (e["all"] - 1) * p["stacking_decay"] ** i
+        for k in exp: exp[k] *= m
     for eff in todays.effect:
         e = p["effects"].get(eff)
-        if not e: continue
+        if not e or e.get("crowd"): continue
         if e.get("ref") == "dec_avg":          # Toast reports these vs the December average day
             scale = dec_avg * e["all"] / base
             for k in exp: exp[k] *= scale

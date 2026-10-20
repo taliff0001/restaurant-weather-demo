@@ -64,6 +64,7 @@ Every value is tagged with its basis: **sourced** (published data), **inferred**
 | Berglund Center coliseum show | +8% | guess |
 | Virginia Tech game watched on TV (away games, home night games) | +8% | guess |
 | Virginia Tech home day game (fans leave town) | −5% | guess |
+| Two or more crowd events on one day | the largest counts in full, the second at half, the third at a quarter | guess (no day in this window has two counted events) |
 | Day-to-day noise | 10%, log-normal | guess |
 
 No published estimate exists for how Virginia Tech games affect Roanoke restaurants, in either direction.
