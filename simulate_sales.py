@@ -30,8 +30,10 @@ P = {
     "rain": {"dine_in": 0.93, "takeout": 1.10},
     # Patio: adds 6% of the day's base on dry days with service-hour temp 65-85 F.  [G] middle of 4-8%
     "patio_bonus": 0.06, "patio_temp": (65, 85),
-    # Snow/ice (all channels).                                   [G]
-    "snow": {2: 0.70, 1: 0.90},
+    # Snow/ice (all channels).                                   [G] level 2 = the one published chain figure (-40%)
+    "snow": {2: 0.60, 1: 0.90},
+    # Frozen roads after a level-2 day (see build_weather.py).   [G]
+    "frozen_roads": 0.85,
 
     # Event effects: multiplier on the day's sales, per channel where it matters.
     "effects": {
@@ -52,6 +54,14 @@ P = {
         # Virginia Tech football                                 [G] bar with TVs
         "vt_watch":    {"all": 1.08},                            # away games, home night games
         "vt_home_day": {"all": 0.95},                            # fans leave town for the game
+        # January 24-25, 2026 winter storm: hand-set recovery curve (closed Jan 25-26 via "closed").
+        # Replaces the generic weather rules on these days.          [S] one WSLS report (Jan 27); rest [G]
+        "storm_day1": {"all": 0.60, "override_weather": True},
+        "storm_day4": {"all": 0.20, "override_weather": True},   # ~15 diners vs ~100 at one downtown spot
+        "storm_day5": {"all": 0.40, "override_weather": True},
+        "storm_day6": {"all": 0.60, "override_weather": True},
+        "storm_day7": {"all": 0.75, "override_weather": True},
+        "storm_day8": {"all": 0.75, "override_weather": True},
     },
     # Day-to-day noise, log-normal so it can't go below zero.    [G]
     "noise_cv": 0.10,
@@ -73,15 +83,19 @@ def expected_day(d, w, todays, p, weekly_base):
     dec_avg = weekly_base / 7 * p["month"][12]
     exp = {"dine_in": base * (1 - p["takeout_share"]), "takeout": base * p["takeout_share"], "patio": 0.0}
 
+    override = any(p["effects"].get(e, {}).get("override_weather") for e in todays.effect)
     dry = w.svc_precip_in < 0.01 and w.snow_level == 0
     lo, hi = p["patio_temp"]
-    if dry and lo <= w.svc_mean_f <= hi:
+    if dry and lo <= w.svc_mean_f <= hi and not override:
         exp["patio"] = base * p["patio_bonus"]
-    if w.svc_precip_in >= p["rain_min_in"]:
-        exp["dine_in"] *= p["rain"]["dine_in"]
-        exp["takeout"] *= p["rain"]["takeout"]
-    if w.snow_level:
-        for k in exp: exp[k] *= p["snow"][int(w.snow_level)]
+    if not override:
+        if w.svc_precip_in >= p["rain_min_in"]:
+            exp["dine_in"] *= p["rain"]["dine_in"]
+            exp["takeout"] *= p["rain"]["takeout"]
+        if w.snow_level:
+            for k in exp: exp[k] *= p["snow"][int(w.snow_level)]
+        elif w.frozen_roads:
+            for k in exp: exp[k] *= p["frozen_roads"]
 
     for eff in todays.effect:
         e = p["effects"].get(eff)
@@ -115,7 +129,8 @@ def simulate(p=P):
         rows.append(dict(date=d.date(), weekday=d.strftime("%a"), closed=closed, **out,
                          events="; ".join(todays.name), effects=";".join(e for e in todays.effect if e != "none"),
                          high_f=w.high_f, svc_mean_f=w.svc_mean_f, svc_precip_in=w.svc_precip_in,
-                         rain=bool(w.svc_precip_in >= p["rain_min_in"]), snow_level=int(w.snow_level)))
+                         rain=bool(w.svc_precip_in >= p["rain_min_in"]), snow_level=int(w.snow_level),
+                         frozen_roads=bool(w.frozen_roads)))
     df = pd.DataFrame(rows)
     df["total"] = df[["dine_in", "patio", "takeout"]].sum(axis=1).round(2)
     return df

@@ -44,9 +44,22 @@ daily = pd.DataFrame({
 }).fillna({"svc_rain_hours": 0, "svc_real_snow_obs": 0})
 daily = daily.loc[START:END]
 daily["snow_level"] = np.where(daily.svc_real_snow_obs >= 2, 2, np.where(daily.snow_obs >= 3, 1, 0))
+
+# Frozen roads: up to 5 days after a level-2 snow/ice day, for as long as every
+# day's high stays at or below 36 F (snow and ice stay on the streets).
+frozen, streak = [], None
+for _, r in daily.iterrows():
+    if r.snow_level == 2:
+        streak = 0; frozen.append(False); continue
+    if streak is not None and streak < 5 and r.high_f <= 36:
+        streak += 1; frozen.append(True)
+    else:
+        streak = None; frozen.append(False)
+daily["frozen_roads"] = frozen
 daily.index.name = "date"
 daily.drop(columns=["snow_obs", "svc_real_snow_obs"]).to_csv("data/kroa_daily.csv")
 
 print(f"{len(daily)} days | min obs/day {int(daily.obs.min())} | "
       f"rain >=0.10 in during service: {(daily.svc_precip_in >= 0.10).sum()} | "
-      f"snow level 2: {list(daily.index[daily.snow_level == 2])} | level 1: {(daily.snow_level == 1).sum()}")
+      f"snow level 2: {list(daily.index[daily.snow_level == 2])} | level 1: {(daily.snow_level == 1).sum()} | "
+      f"frozen roads: {list(daily.index[daily.frozen_roads])}")

@@ -33,6 +33,8 @@ The simulator uses a fixed random seed, so it reproduces the same year every tim
 - **Rain day:** 0.10 in or more during service hours (40 days in the window).
 - **Patio weather:** dry during service hours and a service-hour mean temperature of 65–85 °F.
 - **Snow/ice:** level 2 = moderate or heavy snow, or any ice, during service hours (2 days); level 1 = three or more hourly reports of any snow or ice that day (6 days). Flurries alone don't count.
+- **Frozen roads:** up to 5 days after a level-2 day, while every day's high stays at or below 36 °F.
+- **The January 24–25, 2026 storm** (snow, then sleet; the city declared a state of emergency on Jan 23) is handled as a named event with its own recovery curve, because local reporting shows it shut downtown down for days. It replaces the generic snow rules for Jan 24–31.
 
 ## Assumptions in the simulated sales
 
@@ -46,7 +48,9 @@ Every value is tagged with its basis: **sourced** (published data), **inferred**
 | Takeout share | 18% of sales | inferred (NRA/Circana off-premises traffic) |
 | Rain during service | dine-in −7%, takeout +10% | inferred (Foursquare/AccuWeather foot traffic) / guess |
 | Patio | +6% of the day's sales on patio-weather days | guess |
-| Snow/ice | level 2 −30%, level 1 −10% | guess |
+| Snow/ice | level 2 −40%, level 1 −10% | guess (one published chain figure: −40% on a snowy weekend) |
+| Frozen roads after serious snow/ice | −15% | guess |
+| January 2026 storm | Jan 24 −40% · Jan 25–26 closed · Jan 27 −80% · Jan 28 −60% · Jan 29 −40% · Jan 30–31 −25% | Jan 27 from local reporting ([WSLS](https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/): a downtown brunch spot had ~15 diners vs ~100 on a normal Tuesday); closures from local accounts; the rest guess ([WDBJ](https://www.wdbj7.com/2026/01/28/days-after-winter-storm-many-roanoke-residents-still-trapped-by-ice/): roads still iced Jan 28–29) |
 | Mother's Day | 1.55 × a normal Sunday | sourced (Toast) |
 | Valentine's Day (a Saturday in 2026) | 1.30 × a normal Saturday | inferred (Toast) |
 | New Year's Eve / New Year's Day / Christmas Eve | 1.20 / 0.75 / 0.70 × the December average day | sourced (Toast) |
@@ -56,7 +60,7 @@ Every value is tagged with its basis: **sourced** (published data), **inferred**
 | Large downtown festival | +15% | guess |
 | St. Patrick's Day parade | +20% | guess |
 | Dickens of a Christmas (Fridays) | +10% | guess |
-| Restaurant Week | traffic +15%, average check −10% | guess (2026 dates estimated) |
+| Restaurant Week | traffic +15%, average check −10% | guess (2026 dates not published; estimated Jan 16–23) |
 | Berglund Center coliseum show | +8% | guess |
 | Virginia Tech game watched on TV (away games, home night games) | +8% | guess |
 | Virginia Tech home day game (fans leave town) | −5% | guess |
@@ -66,13 +70,14 @@ No published estimate exists for how Virginia Tech games affect Roanoke restaura
 
 ## Check: does the output match the input?
 
-A regression of log daily sales on weekday, month, weather and event indicators, over the 363 open days, recovers every assumption inside its 95% range, with residual noise of 9.8%.
+`check_recovery.py` regresses log daily sales on weekday, month, weather and event indicators over the 361 open days. Every assumption falls inside its estimate's 95% range (the Jan 24 storm day right at the edge; a single day is one noisy draw), with residual noise of 9.8%.
 
 It also shows a real limit: with one season of data, the Virginia Tech effects (+8% and −5%) can't be told apart from zero. One year of daily sales answers the weather and festival questions; game days need two or three seasons. Single-day holidays are one data point each.
 
 ## Files
 
 - `build_weather.py`, `build_events.py`, `simulate_sales.py`: the pipeline
+- `check_recovery.py`: the regression check above
 - `data/kroa_daily.csv`, `data/events.csv`, `data/sales_daily.csv`: outputs (the raw hourly download is not committed; `build_weather.py` re-creates it)
 - `research/effect-sizes.md`: the research behind the assumptions, with sources
 

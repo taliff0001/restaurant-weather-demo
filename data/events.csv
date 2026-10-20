@@ -27,16 +27,22 @@ date,name,category,effect,source,notes
 2025-12-25,Christmas Day,holiday,closed,https://pos.toasttab.com/blog/on-the-line/2019-christmas-and-christmas-eve-restaurant-trends,81% of Toast restaurants closed
 2025-12-31,New Year's Eve,holiday,nye,https://pos.toasttab.com/blog/on-the-line/new-years-2020-restaurant-trends,
 2026-01-01,New Year's Day,holiday,nyd,https://pos.toasttab.com/blog/on-the-line/new-years-2020-restaurant-trends,
-2026-01-16,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-17,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-18,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-19,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-20,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-21,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-22,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-23,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-24,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
-2026-01-25,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,2026 dates not published; 2025 pattern
+2026-01-16,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-17,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-18,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-19,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-20,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-21,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-22,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-23,Downtown Restaurant Week (dates estimated),festival,restaurant_week,https://www.downtownroanoke.org/do/restaurant-week-2025,"2026 dates not published; 2025 pattern, cut off before the Jan 24 storm"
+2026-01-24,January winter storm,weather_event,storm_day1,https://www.wdbj7.com/2026/01/23/city-roanoke-declares-state-emergency-winter-storm/,storm starts
+2026-01-25,January winter storm,weather_event,closed,https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/,closed (streets impassable)
+2026-01-26,January winter storm,weather_event,closed,https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/,closed (streets impassable)
+2026-01-27,January winter storm,weather_event,storm_day4,https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/,downtown nearly empty (~15 diners vs ~100 at one brunch spot)
+2026-01-28,January winter storm,weather_event,storm_day5,https://www.wdbj7.com/2026/01/28/days-after-winter-storm-many-roanoke-residents-still-trapped-by-ice/,roads still iced
+2026-01-29,January winter storm,weather_event,storm_day6,https://www.wdbj7.com/2026/01/29/some-roanoke-neighborhoods-still-dealing-with-icy-unplowed-roads-days-after-winter-weather/,roads still iced
+2026-01-30,January winter storm,weather_event,storm_day7,https://www.wdbj7.com/2026/01/29/some-roanoke-neighborhoods-still-dealing-with-icy-unplowed-roads-days-after-winter-weather/,recovering
+2026-01-31,January winter storm,weather_event,storm_day8,https://www.wdbj7.com/2026/01/31/another-round-snow-keeps-roanoke-crews-24-hour-response-mode/,another round of snow
 2026-02-08,Super Bowl LX,holiday,super_bowl,https://pos.toasttab.com/blog/on-the-line/super-bowl-food-stats,
 2026-02-14,Valentine's Day (Sat),holiday,valentines,https://pos.toasttab.com/blog/on-the-line/valentines-day-food-insights,multiplier inferred for a Saturday
 2026-03-06,Roanoke Arts Pop!,festival_small,none,https://theroanoker.com/magazine/features/the-roanoker-magazine-festivals-guide/,"listed, no effect modeled"

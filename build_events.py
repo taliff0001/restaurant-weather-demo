@@ -53,9 +53,25 @@ for d in ["2025-10-17", "2025-10-18", "2025-10-19"]:
 for d, n in [("2025-12-05", "tree lighting"), ("2025-12-12", "parade"), ("2025-12-19", "pet costume contest")]:
     add(d, f"Dickens of a Christmas ({n})", "festival", "dickens",
         "https://nrv.mobile.macaronikid.com/articles/69310e50e5c2f52a7c233f9e/dickens-of-a-christmas-2025-a-complete-guide-for-families")
-for d in pd.date_range("2026-01-16", "2026-01-25"):
+for d in pd.date_range("2026-01-16", "2026-01-23"):
     add(d.strftime("%Y-%m-%d"), "Downtown Restaurant Week (dates estimated)", "festival", "restaurant_week",
-        "https://www.downtownroanoke.org/do/restaurant-week-2025", "2026 dates not published; 2025 pattern")
+        "https://www.downtownroanoke.org/do/restaurant-week-2025",
+        "2026 dates not published; 2025 pattern, cut off before the Jan 24 storm")
+
+# January 24-25, 2026 winter storm (snow, then sleet; state of emergency declared Jan 23).
+# Hand-set recovery curve; overrides the generic snow/frozen-roads rules for these days.
+STORM = [
+    ("2026-01-24", "storm_day1", "storm starts", "https://www.wdbj7.com/2026/01/23/city-roanoke-declares-state-emergency-winter-storm/"),
+    ("2026-01-25", "closed", "closed (streets impassable)", "https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/"),
+    ("2026-01-26", "closed", "closed (streets impassable)", "https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/"),
+    ("2026-01-27", "storm_day4", "downtown nearly empty (~15 diners vs ~100 at one brunch spot)", "https://www.wsls.com/news/local/2026/01/27/snow-covered-streets-leave-downtown-roanoke-businesses-empty/"),
+    ("2026-01-28", "storm_day5", "roads still iced", "https://www.wdbj7.com/2026/01/28/days-after-winter-storm-many-roanoke-residents-still-trapped-by-ice/"),
+    ("2026-01-29", "storm_day6", "roads still iced", "https://www.wdbj7.com/2026/01/29/some-roanoke-neighborhoods-still-dealing-with-icy-unplowed-roads-days-after-winter-weather/"),
+    ("2026-01-30", "storm_day7", "recovering", "https://www.wdbj7.com/2026/01/29/some-roanoke-neighborhoods-still-dealing-with-icy-unplowed-roads-days-after-winter-weather/"),
+    ("2026-01-31", "storm_day8", "another round of snow", "https://www.wdbj7.com/2026/01/31/another-round-snow-keeps-roanoke-crews-24-hour-response-mode/"),
+]
+for d, eff, note, src in STORM:
+    add(d, "January winter storm", "weather_event", eff, src, note)
 add("2026-03-14", "St. Patrick's Day Parade & Shamrock Festival", "festival", "st_pats_parade",
     "https://www.downtownroanoke.org/news-item/freedom-first-st-patrick-s-day-parade-and-shamrock-festival-2026")
 for d in ["2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19"]:
